@@ -1,0 +1,45 @@
+.ListItem_Wrapper {
+  background-color: var(--card-bg);
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1rem;
+  width: 100%;
+  padding: 0.8rem 1.3rem 0.8rem 2.3rem;
+  min-height: 2.75rem;
+  box-sizing: border-box;
+  position: relative;
+  border-bottom: 1px solid var(--border);
+  color: var(--font-color);
+}
+.Input_Check {
+  height: 1rem;
+  width: 1rem;
+  position: absolute;
+  margin: -0.1rem 0.8rem;
+  left: 0;
+  border-radius: 50%;
+  border: 1px solid var(--check-circle);
+}
+.Input_Check input {
+  display: none;
+}
+.Input_Check.active {
+  background: url(../../assets/icon-check.svg) no-repeat center,
+    linear-gradient(313deg, #7761e0, #5393e2);
+}
+.cross {
+  background: url(../../assets/icon-cross.svg) center/ cover no-repeat;
+  height: 1rem;
+  width: 1rem;
+  position: absolute;
+  right: 0;
+  margin-right: 1rem;
+  opacity: 0;
+  border: 0;
+}
+.ListItem_Wrapper:hover .cross {
+  opacity: 1;
+}
+.completed {
+  color: var(--border);
+  text-decoration: line-through;
+}

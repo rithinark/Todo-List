@@ -1,0 +1,33 @@
+.Header {
+  min-height: 15rem;
+  background-size: cover;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: top;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.Header_title {
+  color: white;
+  font-weight: 700;
+  font-size: 1.5rem;
+  letter-spacing: 0.4rem;
+  padding: 3.5rem 0 1.5rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.Card {
+  width: 90%;
+  max-width: 30rem;
+  min-width: 20rem;
+  position: absolute;
+}
+.icon {
+  background: var(--modeBG) center/cover no-repeat;
+  width: 1.5rem;
+  height: 1.5rem;
+  cursor: pointer;
+  border: 0;
+}

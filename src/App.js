@@ -1,23 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import Header from "./components/Layout/Header";
 
 function App() {
+  const [mode, setMode] = useState(true);
+  const modeHandler = () => setMode((pre) => !pre);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={`App ${mode ? "dark-mode" : ""}`}>
+      {mode}
+      <Header value={mode} modeHandler={modeHandler} />
     </div>
   );
 }

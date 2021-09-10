@@ -1,0 +1,26 @@
+.List_Info_Wrapper {
+  padding: 0.7rem 0.7rem 0.4rem 0.7rem;
+  display: flex;
+  font-size: 0.6rem;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--info);
+  font-weight: 700;
+}
+.Button {
+  border: 0;
+  background-color: transparent;
+  font-size: inherit;
+  color: var(--info);
+  cursor: pointer;
+}
+.Option ~ label {
+  cursor: pointer;
+  padding: 0.3rem;
+}
+.Option[type="radio"] {
+  display: none;
+}
+.Option:checked + label {
+  color: rgb(79, 79, 230);
+}
