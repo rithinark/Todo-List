@@ -6,7 +6,6 @@ function App() {
   const modeHandler = () => setMode((pre) => !pre);
   return (
     <div className={`App ${mode ? "dark-mode" : ""}`}>
-      {mode}
       <Header value={mode} modeHandler={modeHandler} />
     </div>
   );
